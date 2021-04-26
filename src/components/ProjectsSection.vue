@@ -34,4 +34,11 @@ div#content-projects-container-tiles {
   flex-wrap: wrap;
   padding-bottom: 50px;
 }
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  #content-projects-container-tiles{
+    width: 60%;
+  }
+}
 </style>

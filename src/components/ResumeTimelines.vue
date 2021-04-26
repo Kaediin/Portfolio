@@ -27,7 +27,7 @@ export default {
   padding: 50px 0 0 0;
 }
 .container{
-  padding-bottom: 50px;
+  padding-bottom: 20px;
 }
 
 /* Extra small devices (phones, 600px and down) */

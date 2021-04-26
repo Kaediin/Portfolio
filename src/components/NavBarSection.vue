@@ -8,11 +8,11 @@
         <li @click="$emit('scroll-to', 'contact')" id="section-3">Contact</li>
       </ul>
 
-      <ul>
-        <li @click="$emit('lang', 'NL')">NL</li>
-        |
-        <li @click="$emit('lang', 'EN')">EN</li>
-      </ul>
+<!--      <ul>-->
+<!--        <li @click="$emit('lang', 'NL')">NL</li>-->
+<!--        |-->
+<!--        <li @click="$emit('lang', 'EN')">EN</li>-->
+<!--      </ul>-->
     </div>
   </div>
 </template>
@@ -82,7 +82,7 @@ li:hover {
 
 #containerListItems {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   width: 65%;
   margin: auto;
 }
