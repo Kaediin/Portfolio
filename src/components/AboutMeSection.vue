@@ -6,8 +6,8 @@
     </div>
     <div id="content-about">
       <div id="content-about-text-mobile">
-        <div class="typedtextMobile"><h2>Hello, my name is Kaedin Schouten</h2></div>
-        <div class="typedtextMobile"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+        <h2>Hello, my name is Kaedin Schouten</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
           tincidunt magna non ex mattis cursus.
           Quisque efficitur dui et urna sagittis pharetra. In suscipit nisl semper venenatis mattis.
           Pellentesque mollis.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
@@ -27,7 +27,7 @@
           Quisque efficitur dui et urna sagittis pharetra. In suscipit nisl semper venenatis mattis.
           Pellentesque mollis<br><br>
           tellus. Pellentesque odio justo, fermentum et neque in, congue dictum purus. Donec eu convallis
-          enim, eu.</p></div>
+          enim, eu.</p>
       </div>
     </div>
   </section>
@@ -50,7 +50,6 @@ export default {
 
 h2{
   font-size: xx-large;
-  padding: 0 0 50px 0;
 }
 
 .typedtextMobile p{
@@ -77,8 +76,34 @@ div#content-about-pic img {
   justify-content: center;
   align-items: center;
   flex: 1 1 auto;
-  padding-left: 20%;
-  padding-right: 20%;
+  padding: 0 30%;
   text-align: center;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  #content-about{
+    padding: 0 5% 20px 5%;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 1025px) {
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
 }
 </style>

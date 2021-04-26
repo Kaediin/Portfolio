@@ -30,8 +30,8 @@ export default {
 div#content-projects-container-tiles {
   display: flex;
   justify-content: space-evenly;
-  width: 80%;
   margin: auto;
   flex-wrap: wrap;
+  padding-bottom: 50px;
 }
 </style>

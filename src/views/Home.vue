@@ -5,7 +5,6 @@
     <AboutMeSection id="about-me"/>
     <ProjectsSection :projects="projects" id="projects"/>
     <ContactSection id="contact"/>
-    <Footer/>
   </div>
 </template>
 
@@ -15,7 +14,6 @@ import NavBarSection from "@/components/NavBarSection";
 import AboutMeSection from "@/components/AboutMeSection";
 import ProjectsSection from "@/components/ProjectsSection";
 import ContactSection from "@/components/ContactSection";
-import Footer from "@/components/Footer";
 export default {
   name: 'Home',
   components: {
@@ -23,8 +21,7 @@ export default {
     NavBarSection,
     AboutMeSection,
     ProjectsSection,
-    ContactSection,
-    Footer
+    ContactSection
   },
   data(){
     return{

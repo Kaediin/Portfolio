@@ -8,18 +8,21 @@
       <form @submit="sendMail">
         <div id="container-contact">
           <input type="text" v-model="email" name="contact_form_email" placeholder="Enter your email"
-                 required><br>
+                 required>
           <input type="text" v-model="subject" name="contact_form_subject"
                  placeholder="Subject"
-                 required><br>
+                 required>
           <textarea name="contact_form_message" v-model="body" placeholder="Your message"
-                    required></textarea><br>
+                    required></textarea>
           <div id="container-submit-form">
             <input type="submit" id="button_submit_form" value="SEND">
           </div>
         </div>
       </form>
     </div>
+    <footer>
+      <p>Kaedin Schouten © 2021</p>
+    </footer>
   </section>
 </template>
 
@@ -75,6 +78,7 @@ div#container-send-email {
   flex: 1 1 auto;
 }
 
+
 div#form-title {
   display: flex;
   justify-content: center;
@@ -90,9 +94,9 @@ div#form-title p {
 input[type=text], textarea {
   border: none;
   background: #253241;
-  padding: 5px 5px 5px 10px;
   width: 600px;
   height: 50px;
+  padding: 5px;
   font-size: large;
 }
 
@@ -105,4 +109,55 @@ textarea {
   resize: vertical;
 }
 
+p{
+  padding: 0;
+  margin: 0;
+}
+
+footer {
+  background: #1b242f;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  line-height: 100px;
+  align-content: center;
+  text-align: center;
+}
+
+#container-contact{
+  padding-bottom: 20px;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  form{
+    width: 80%;
+  }
+  textarea, input[type=text]{
+    width: 100%;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  #container-contact{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 1025px) {
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+}
 </style>

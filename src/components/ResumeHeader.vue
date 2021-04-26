@@ -29,7 +29,6 @@
 export default {
   name: "ResumeHeader",
 }
-alert(window.innerWidth)
 </script>
 
 <style scoped>

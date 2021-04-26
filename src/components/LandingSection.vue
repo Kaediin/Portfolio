@@ -82,13 +82,13 @@ div#centered-image-buttons {
   transition: 0.8s;
 }
 
-.nav-button-main:hover:first-of-type img {
+.centered-image-button-aboutme:hover img {
   filter: invert(100%);
   transform: rotate(90deg);
   transition: 0.8s;
 }
 
-.nav-button-main:hover:last-of-type img {
+.centered-image-button-resume:hover img {
   filter: invert(100%);
   transform: rotate(-45deg);
   transition: 0.8s;
@@ -110,5 +110,33 @@ p#image-title {
   color: white;
   text-align: center;
   margin-top: 1%;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .centered-image-button-aboutme{
+    margin-right: 10px;
+  }
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 1025px) {
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
 }
 </style>
