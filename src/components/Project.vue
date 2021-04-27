@@ -1,7 +1,7 @@
 <template>
-  <div class="content-tile hvr-grow">
+  <div class="content-tile hvr-grow" @click="$emit('show-details', project.id)">
     <div class="content-tile-title">
-      <h3>{{ project.project }}</h3>
+      <h3>{{ project.projectType }}</h3>
     </div>
     <div class="content-tile-img">
       <img :src="require('@/assets/'+project.img)" alt="">
@@ -15,7 +15,7 @@
       <hr class="content-tile-divider">
     </div>
     <div class="content-tile-container-description">
-      <p>{{ project.description }}</p>
+      <p>{{ project.descriptionShort }}</p>
     </div>
     <div class="content-tile-container-button-links">
       <div :key="button" v-for="button in project.buttons">
@@ -40,8 +40,6 @@ export default {
 
 <style scoped>
 .hvr-grow {
-  display: inline-block;
-  vertical-align: middle;
   transform: translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
   backface-visibility: hidden;
@@ -53,6 +51,7 @@ export default {
 .hvr-grow:hover,
 .hvr-grow:focus,
 .hvr-grow:active {
+  cursor: pointer;
   transform: scale(1.1);
 }
 
@@ -103,6 +102,7 @@ export default {
 
 .content-tile-software {
   font-weight: bold;
+  margin: 8px 0;
 }
 
 .content-tile-title h3 {

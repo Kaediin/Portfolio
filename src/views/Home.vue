@@ -39,14 +39,15 @@ export default {
     this.projects = [
       {
         id: 1,
-        project: "Mobile App",
+        projectType: "Mobile App",
         img: "ic-roommanager.png",
         softwares: [
           "Android",
           "XML",
           "Java | Kotlin"
         ],
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tincidunt magna non ex mattis cursus.",
+        descriptionShort: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tincidunt magna non ex mattis cursus.",
+        descriptionLong: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tincidunt magna non ex mattis cursus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tincidunt magna non ex mattis cursus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tincidunt magna non ex mattis cursus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tincidunt magna non ex mattis cursus.",
         buttons: [
           {
             imgPath: "ic-globe.png",
@@ -56,7 +57,7 @@ export default {
       },
       {
         id: 2,
-        project: "Website",
+        projectType: "Website",
         img: "ic-adnan.png",
         softwares: [
           "Django",
@@ -64,8 +65,8 @@ export default {
           "Google Firebase",
           "Javascript | jQuery"
         ],
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tincidunt magna non ex mattis cursus.",
-        buttons: [
+        descriptionShort: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tincidunt magna non ex mattis cursus.",
+        descriptionLong: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tincidunt magna non ex mattis cursus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tincidunt magna non ex mattis cursus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tincidunt magna non ex mattis cursus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tincidunt magna non ex mattis cursus.",        buttons: [
           {
             imgPath: "ic-globe.png",
             buttonUrl: "http://adnanjerbi.com"
@@ -74,15 +75,15 @@ export default {
       },
       {
         id: 3,
-        project: "Website",
+        projectType: "Website",
         img: "ic-recipebook.png",
         softwares: [
           "Django",
           "Python",
           "Google Firebase"
         ],
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tincidunt magna non ex mattis cursus.",
-        buttons: [
+        descriptionShort: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tincidunt magna non ex mattis cursus.",
+        descriptionLong: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tincidunt magna non ex mattis cursus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tincidunt magna non ex mattis cursus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tincidunt magna non ex mattis cursus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tincidunt magna non ex mattis cursus.",        buttons: [
           {
             imgPath: "ic-code.png",
             buttonUrl: "https://github.com/Kaediin/Recipebook"
@@ -95,7 +96,7 @@ export default {
       },
       {
         id: 4,
-        project: "Mobile App",
+        projectType: "Mobile App",
         img: "ic-scavengerhunt.png",
         softwares: [
           "Android",
@@ -103,8 +104,8 @@ export default {
           "Java | Kotlin",
           "Google Firebase"
         ],
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tincidunt magna non ex mattis cursus.",
-        buttons: [
+        descriptionShort: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tincidunt magna non ex mattis cursus.",
+        descriptionLong: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tincidunt magna non ex mattis cursus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tincidunt magna non ex mattis cursus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tincidunt magna non ex mattis cursus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tincidunt magna non ex mattis cursus.",        buttons: [
           {
             imgPath: "ic-code.png",
             buttonUrl: "https://github.com/Kaediin/ScavengerHunt"
@@ -117,15 +118,15 @@ export default {
       },
       {
         id: 5,
-        project: "Mobile App",
+        projectType: "Mobile App",
         img: "ic-spacex.png",
         softwares: [
           "Android",
           "XML",
           "Java | Kotlin"
         ],
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tincidunt magna non ex mattis cursus.",
-        buttons: [
+        descriptionShort: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tincidunt magna non ex mattis cursus.",
+        descriptionLong: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tincidunt magna non ex mattis cursus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tincidunt magna non ex mattis cursus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tincidunt magna non ex mattis cursus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tincidunt magna non ex mattis cursus.",        buttons: [
           {
             imgPath: "ic-code.png",
             buttonUrl: "https://github.com/Kaediin/SpaceX-API-Kotlin"
@@ -138,7 +139,7 @@ export default {
       },
       {
         id: 6,
-        project: "Mobile App",
+        projectType: "Mobile App",
         img: "ic-mclib.png",
         softwares: [
           "Android | IOS",
@@ -146,8 +147,8 @@ export default {
           "Dart",
           "Google Firebase"
         ],
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tincidunt magna non ex mattis cursus.",
-        buttons: [
+        descriptionShort: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tincidunt magna non ex mattis cursus.",
+        descriptionLong: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tincidunt magna non ex mattis cursus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tincidunt magna non ex mattis cursus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tincidunt magna non ex mattis cursus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tincidunt magna non ex mattis cursus.",        buttons: [
           {
             imgPath: "ic-code.png",
             buttonUrl: "https://github.com/Kaediin/Flutter-CLib"
