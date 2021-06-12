@@ -1,6 +1,8 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Home from '@/views/Home.vue'
 import Resume from '@/views/Resume'
+import Admin from "@/views/Admin";
+import Console from "@/views/Console";
 
 const routes = [
   {
@@ -12,6 +14,16 @@ const routes = [
     path: '/resume',
     name: 'Resume',
     component: Resume
+  },
+  {
+    path: '/Admin',
+    name: 'Admin',
+    component: Admin
+  },
+  {
+    path: '/Console',
+    name: 'Consol',
+    component: Console
   }
 ]
 

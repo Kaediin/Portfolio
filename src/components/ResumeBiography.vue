@@ -1,6 +1,11 @@
 <template>
   <div>
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid asperiores assumenda cum deleniti hic molestias nihil nobis optio rerum temporibus? Animi, cumque id in laborum nisi omnis quod ut velit voluptatem? A accusantium aperiam aut consectetur cum cupiditate debitis delectus eius et inventore, iste libero magnam molestias, natus non nulla, officiis praesentium qui quia quisquam quod rerum tempora totam voluptatibus voluptatum! Ad adipisci animi asperiores aspernatur consequatur debitis eaque enim et exercitationem, explicabo id labore laudantium libero magni, mollitia necessitatibus odio odit perferendis possimus provident, quaerat quasi quos repellat repudiandae saepe temporibus tenetur totam velit veritatis voluptates? Enim eveniet, vitae.</p>
+    <h3>Ambitions</h3>
+  <p>My passion for software extends beyond the boundaries of base-functionality. I always strive to help and
+    create the best solution in the most effective and efficient way possible. My ambition is to contribute to a
+    sustainable society – helping companies achieve their sustainable goals and being fully committed to working
+    towards a future with sustainable-energy.</p>
+<!--  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid asperiores assumenda cum deleniti hic molestias nihil nobis optio rerum temporibus? Animi, cumque id in laborum nisi omnis quod ut velit voluptatem? A accusantium aperiam aut consectetur cum cupiditate debitis delectus eius et inventore, iste libero magnam molestias, natus non nulla, officiis praesentium qui quia quisquam quod rerum tempora totam voluptatibus voluptatum! Ad adipisci animi asperiores aspernatur consequatur debitis eaque enim et exercitationem, explicabo id labore laudantium libero magni, mollitia necessitatibus odio odit perferendis possimus provident, quaerat quasi quos repellat repudiandae saepe temporibus tenetur totam velit veritatis voluptates? Enim eveniet, vitae.</p>-->
   </div>
 </template>
 

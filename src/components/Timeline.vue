@@ -85,6 +85,11 @@ export default {
     right: 25%;
   }
 
+  .subTimelinePeriod{
+    display: flex;
+    align-items: center;
+  }
+
   h2 {
     margin: 0 20px;
   }

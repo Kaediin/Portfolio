@@ -9,7 +9,7 @@
     <Header name="Projects"/>
     <div id="content-projects-container-tiles">
       <div :key="project.id" v-for="project in projects">
-        <Project @show-details="showDetails" :project="project"/>
+        <Project :project="project"/>
       </div>
     </div>
   </section>

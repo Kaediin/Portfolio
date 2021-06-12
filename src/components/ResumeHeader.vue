@@ -6,15 +6,19 @@
       <br>
       <table>
         <tr>
-          <td><b>Phone</b></td>
-          <td>+31 46 44 60 75</td>
+          <td class="header"><b>Date of birth</b></td>
+          <td>February 8th 2002, Almere, The Netherlands</td>
         </tr>
         <tr>
-          <td><b>Email</b></td>
+          <td class="header"><b>Phone</b></td>
+          <td>(+31) 6 46 44 60 75</td>
+        </tr>
+        <tr>
+          <td class="header"><b>Email</b></td>
           <td>skaedin@gmail.com</td>
         </tr>
         <tr>
-          <td><b>KVK</b></td>
+          <td class="header"><b>KVK</b></td>
           <td>80897800</td>
         </tr>
       </table>
@@ -64,7 +68,16 @@ img {
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   img{
-    height: 150px;
+    height: 125px;
+  }
+  #headerContainer{
+    padding: 5%;
+  }
+  td{
+    font-size: smaller;
+  }
+  .header{
+    width: 200px;
   }
 }
 
