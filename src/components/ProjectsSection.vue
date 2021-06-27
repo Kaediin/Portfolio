@@ -14,11 +14,9 @@
     </div>
     <div class="container-projects-github">
       <div class="content-projects-github hvr-grow" @click="openLink('https://github.com/Kaediin')">
-
         <p>For more projects, see my GitHub!</p>
         <img :src="require('@/assets/GitHub-logo-white.png')" alt="GitHub image" height="75"/>
       </div>
-
     </div>
   </section>
 </template>
@@ -86,7 +84,7 @@ export default {
         }
       }
     },
-    openLink(url){
+    openLink(url) {
       window.open(url)
     }
   }
@@ -125,9 +123,11 @@ div#content-projects-container-tiles {
   margin: auto;
   flex-wrap: wrap;
 }
-.container-projects-github{
+
+.container-projects-github {
   padding: 50px 0;
 }
+
 .content-projects-github {
   display: flex;
   justify-content: center;
@@ -149,6 +149,15 @@ div#content-projects-container-tiles {
 .hvr-grow:active {
   cursor: pointer;
   transform: scale(1.1);
+}
+
+@media only screen and (max-width: 450px){
+  .content-projects-github img{
+    height: 50px;
+  }
+  .container-projects-github{
+    font-size: small;
+  }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
