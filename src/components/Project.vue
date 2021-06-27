@@ -20,9 +20,8 @@
     <div class="content-tile-container-button-links">
       <div :key="button" v-for="button in project.buttons">
         <div class="content-tile-button">
-          <a :href="button.buttonUrl" target="_blank">
-            <img :src="require('@/assets/'+button.imgPath)" width="50px" height="50px">
-          </a>
+          <img @click="openLink(button.buttonUrl)" :src="require('@/assets/'+button.imgPath+'')" width="50"
+               height="50" alt="">
         </div>
       </div>
     </div>
@@ -34,6 +33,11 @@ export default {
   name: "Project",
   props: {
     project: Object
+  },
+  methods: {
+    openLink(url) {
+      window.open(url)
+    }
   }
 }
 </script>
@@ -57,7 +61,7 @@ export default {
 
 .content-tile {
   background: #00806f;
-  width: 300px;
+  width: 350px;
   border-radius: 20px;
   margin: 25px;
   box-shadow: 0 7px 5px -2px black;
@@ -82,6 +86,10 @@ export default {
 
 .content-tile-button {
   background-color: #004d42;
+  padding: 0;
+  margin: 0;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   cursor: pointer;
 }
@@ -131,6 +139,6 @@ export default {
 
 .content-tile-divider {
   width: 80%;
-  border-top: 2px solid white;
+  background-color: white;
 }
 </style>

@@ -3,7 +3,7 @@
     <div id="myModal" class="modal">
       <!-- Modal content -->
       <div class="modal-content">
-        <ProjectDetails :projects="projects" :project="detailsProject" />
+        <ProjectDetails :projects="projects" :project="detailsProject"/>
       </div>
     </div>
     <Header name="Projects"/>
@@ -11,6 +11,14 @@
       <div :key="project.id" v-for="project in projects">
         <Project :project="project"/>
       </div>
+    </div>
+    <div class="container-projects-github">
+      <div class="content-projects-github hvr-grow" @click="openLink('https://github.com/Kaediin')">
+
+        <p>For more projects, see my GitHub!</p>
+        <img :src="require('@/assets/GitHub-logo-white.png')" alt="GitHub image" height="75"/>
+      </div>
+
     </div>
   </section>
 </template>
@@ -37,8 +45,8 @@ export default {
           "XML",
           "Java | Kotlin"
         ],
-        descriptionShort: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tincidunt magna non ex mattis cursus.",
-        descriptionLong: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tincidunt magna non ex mattis cursus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tincidunt magna non ex mattis cursus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tincidunt magna non ex mattis cursus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tincidunt magna non ex mattis cursus.",
+        descriptionShort: "This Android-project is a simple app that displays their web-application in an app with extra functions like: LED-lights for status.",
+        descriptionLong: "This Android-project is a simple app that displays their web-application in an app with extra functions like: LED-lights for status.",
         buttons: [
           {
             imgPath: "ic-globe.png",
@@ -77,6 +85,9 @@ export default {
           modal.style.display = "none";
         }
       }
+    },
+    openLink(url){
+      window.open(url)
     }
   }
 }
@@ -99,7 +110,7 @@ export default {
 }
 
 /* Modal Content */
-.modal-content {
+.modal-content, .content-projects-github {
   background-color: #00806f;
   border-radius: 10px;
   margin: auto;
@@ -113,7 +124,31 @@ div#content-projects-container-tiles {
   justify-content: space-evenly;
   margin: auto;
   flex-wrap: wrap;
-  padding-bottom: 50px;
+}
+.container-projects-github{
+  padding: 50px 0;
+}
+.content-projects-github {
+  display: flex;
+  justify-content: center;
+  width: max-content;
+  align-items: center;
+  cursor: pointer;
+}
+
+.hvr-grow {
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  transition-duration: 0.3s;
+  transition-property: transform;
+}
+
+.hvr-grow:hover,
+.hvr-grow:focus,
+.hvr-grow:active {
+  cursor: pointer;
+  transform: scale(1.1);
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */

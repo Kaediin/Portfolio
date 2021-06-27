@@ -15,7 +15,7 @@
         </tr>
         <tr>
           <td class="header"><b>Email</b></td>
-          <td>skaedin@gmail.com</td>
+          <td><a href="mailto:skaedin@gmail.com" >skaedin@gmail.com</a></td>
         </tr>
         <tr>
           <td class="header"><b>KVK</b></td>

@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <LandingSection @scroll-to="scrollTo" id="landingpage" />
+    <LandingSection @scroll-to="scrollTo" id="landingpage"/>
     <NavBarSection @scroll-to="scrollTo" id="navbar"/>
     <AboutMeSection id="about-me"/>
     <ProjectsSection :projects="projects" id="projects"/>
@@ -14,6 +14,7 @@ import NavBarSection from "@/components/NavBarSection";
 import AboutMeSection from "@/components/AboutMeSection";
 import ProjectsSection from "@/components/ProjectsSection";
 import ContactSection from "@/components/ContactSection";
+
 export default {
   name: 'Home',
   components: {
@@ -23,8 +24,8 @@ export default {
     ProjectsSection,
     ContactSection
   },
-  data(){
-    return{
+  data() {
+    return {
       projects: [],
       scrollPosition: null
     }
@@ -39,14 +40,14 @@ export default {
     this.projects = [
       {
         id: 1,
-        projectType: "Mobile App",
+        projectType: "Android App",
         img: "ic-roommanager.png",
         softwares: [
           "Android",
           "XML",
           "Java | Kotlin"
         ],
-        descriptionShort: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tincidunt magna non ex mattis cursus.",
+        descriptionShort: "This Android-project is a simple app that displays the Reflex-Online web-application in an app, with added functionality like: LED-lights to show the booking-status, automatic reboots.",
         descriptionLong: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tincidunt magna non ex mattis cursus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tincidunt magna non ex mattis cursus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tincidunt magna non ex mattis cursus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tincidunt magna non ex mattis cursus.",
         buttons: [
           {
@@ -56,34 +57,52 @@ export default {
         ]
       },
       {
-        id: 2,
-        projectType: "Website",
-        img: "ic-adnan.png",
+        id: 6,
+        projectType: "Restaurant Website",
+        img: "ic-williewong.png",
         softwares: [
-          "Django",
-          "Python",
-          "Google Firebase",
-          "Javascript | jQuery"
+          "VueJS",
+          "JavaScript"
         ],
-        descriptionShort: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tincidunt magna non ex mattis cursus.",
-        descriptionLong: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tincidunt magna non ex mattis cursus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tincidunt magna non ex mattis cursus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tincidunt magna non ex mattis cursus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tincidunt magna non ex mattis cursus.",        buttons: [
+        descriptionShort: "A simple website for the restaurant chain Willie Wong in The Netherlands. This website is currently in the early stage of its development.",
+        descriptionLong: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tincidunt magna non ex mattis cursus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tincidunt magna non ex mattis cursus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tincidunt magna non ex mattis cursus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tincidunt magna non ex mattis cursus.",
+        buttons: [
           {
             imgPath: "ic-globe.png",
-            buttonUrl: "http://adnanjerbi.com"
+            buttonUrl: "https://williewong.nl/"
+          }
+        ]
+      },
+      {
+        id: 5,
+        projectType: "SpaceX Launch-Tracking App",
+        img: "ic-spacex.png",
+        softwares: [
+          "Android",
+          "XML",
+          "Java | Kotlin"
+        ],
+        descriptionShort: "In this app you can stay up to date with all of the latest rocket-news regarding SpaceX. This app shows all the launches, its details, and way more. Currently also in development for I(PAD-)OS.",
+        descriptionLong: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tincidunt magna non ex mattis cursus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tincidunt magna non ex mattis cursus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tincidunt magna non ex mattis cursus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tincidunt magna non ex mattis cursus.",
+        buttons: [
+          {
+            imgPath: "ic-code.png",
+            buttonUrl: "https://github.com/Kaediin/SpaceX-API-Kotlin"
           }
         ]
       },
       {
         id: 3,
-        projectType: "Website",
+        projectType: "Recipebook Web-App",
         img: "ic-recipebook.png",
         softwares: [
           "Django",
           "Python",
           "Google Firebase"
         ],
-        descriptionShort: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tincidunt magna non ex mattis cursus.",
-        descriptionLong: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tincidunt magna non ex mattis cursus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tincidunt magna non ex mattis cursus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tincidunt magna non ex mattis cursus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tincidunt magna non ex mattis cursus.",        buttons: [
+        descriptionShort: "This website is a recipebook application in which a user can create, update, read, and delete recipes. Each recipe has: method, ingredients, pictures, tags, and total time to make.",
+        descriptionLong: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tincidunt magna non ex mattis cursus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tincidunt magna non ex mattis cursus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tincidunt magna non ex mattis cursus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tincidunt magna non ex mattis cursus.",
+        buttons: [
           {
             imgPath: "ic-code.png",
             buttonUrl: "https://github.com/Kaediin/Recipebook"
@@ -96,7 +115,7 @@ export default {
       },
       {
         id: 4,
-        projectType: "Mobile App",
+        projectType: "Scavenger Hunt App",
         img: "ic-scavengerhunt.png",
         softwares: [
           "Android",
@@ -104,58 +123,31 @@ export default {
           "Java | Kotlin",
           "Google Firebase"
         ],
-        descriptionShort: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tincidunt magna non ex mattis cursus.",
-        descriptionLong: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tincidunt magna non ex mattis cursus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tincidunt magna non ex mattis cursus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tincidunt magna non ex mattis cursus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tincidunt magna non ex mattis cursus.",        buttons: [
+        descriptionShort: "With this app you easily setup a scavenger-hunt in which you can setup a quiz at each location. The app uses its GPS location to know if the user is in range of the target. This app is currently in beta-testing.",
+        descriptionLong: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tincidunt magna non ex mattis cursus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tincidunt magna non ex mattis cursus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tincidunt magna non ex mattis cursus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tincidunt magna non ex mattis cursus.",
+        buttons: [
           {
             imgPath: "ic-code.png",
             buttonUrl: "https://github.com/Kaediin/ScavengerHunt"
-          },
-          {
-            imgPath: "ic-playstore.png",
-            buttonUrl: "https://comingsoon.com"
           }
         ]
       },
       {
-        id: 5,
-        projectType: "Mobile App",
-        img: "ic-spacex.png",
+        id: 2,
+        projectType: "Portfolio Website",
+        img: "ic-adnan.png",
         softwares: [
-          "Android",
-          "XML",
-          "Java | Kotlin"
+          "Django",
+          "Python",
+          "Google Firebase",
+          "Javascript | jQuery"
         ],
-        descriptionShort: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tincidunt magna non ex mattis cursus.",
-        descriptionLong: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tincidunt magna non ex mattis cursus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tincidunt magna non ex mattis cursus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tincidunt magna non ex mattis cursus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tincidunt magna non ex mattis cursus.",        buttons: [
+        descriptionShort: "A simple portfolio-website that I've made for Adnan Jerbi. He has his own built-in admin-console on the website in which he can create, update, read, and delete content to keep his portfolio up-to-date.",
+        descriptionLong: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tincidunt magna non ex mattis cursus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tincidunt magna non ex mattis cursus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tincidunt magna non ex mattis cursus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tincidunt magna non ex mattis cursus.",
+        buttons: [
           {
-            imgPath: "ic-code.png",
-            buttonUrl: "https://github.com/Kaediin/SpaceX-API-Kotlin"
-          },
-          {
-            imgPath: "ic-playstore.png",
-            buttonUrl: "https://comingsoon.com"
-          }
-        ]
-      },
-      {
-        id: 6,
-        projectType: "Mobile App",
-        img: "ic-mclib.png",
-        softwares: [
-          "Android | IOS",
-          "Flutter",
-          "Dart",
-          "Google Firebase"
-        ],
-        descriptionShort: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tincidunt magna non ex mattis cursus.",
-        descriptionLong: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tincidunt magna non ex mattis cursus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tincidunt magna non ex mattis cursus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tincidunt magna non ex mattis cursus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tincidunt magna non ex mattis cursus.",        buttons: [
-          {
-            imgPath: "ic-code.png",
-            buttonUrl: "https://github.com/Kaediin/Flutter-CLib"
-          },
-          {
-            imgPath: "ic-playstore.png",
-            buttonUrl: "https://comingsoon.com"
+            imgPath: "ic-globe.png",
+            buttonUrl: "http://adnanjerbi.com"
           }
         ]
       }
@@ -165,7 +157,7 @@ export default {
 </script>
 
 <style>
-.active{
+.active {
   color: #e31b6d;
 }
 
@@ -184,7 +176,7 @@ footer {
   text-align: center;
 }
 
-#landingpage{
+#landingpage {
   min-height: 100vh;
   background-size: 100% 100%;
 }
@@ -195,15 +187,17 @@ footer {
   min-height: 100vh;
 }
 
-#projects{
+#projects {
   min-height: 100vh;
   background: #253241;
   z-index: -1;
 }
-#navbar{
+
+#navbar {
   z-index: 100;
 }
-#contact{
+
+#contact {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
